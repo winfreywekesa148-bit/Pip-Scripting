@@ -14,6 +14,10 @@ def authenticate():
 
 filename = (f"log_{datetime.now().strftime('%Y%m%d')}.txt")
 
+def date(self, date):
+    self.date = date
+    
+
 with open(filename, "w") as file:
     for entry in log_data:
         file.write(f"{entry}\n")
