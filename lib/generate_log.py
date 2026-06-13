@@ -12,6 +12,7 @@ def generate_log(data):
 
     # STEP 2: Generate a filename with today's date (e.g., "log_20250408.txt")
     # Hint: Use datetime.now().strftime("%Y%m%d")
+    filename = f"log_{datetime.now().strftime('%Y%m%d')}.txt"
 
     # STEP 3: Write the log entries to a file using File I/O
     # Use a with open() block and write each line from the data list
