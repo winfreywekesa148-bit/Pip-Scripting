@@ -17,7 +17,10 @@ def generate_log(data):
     # STEP 3: Write the log entries to a file using File I/O
     # Use a with open() block and write each line from the data list
     # Example: file.write(f"{entry}\n")
-
+    with open(filename, "w") as file:
+        for entry in data:
+            file.write(f"{entry}\n")
+            
     # STEP 4: Print a confirmation message with the filename
 
     pass
