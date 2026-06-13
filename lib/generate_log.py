@@ -22,6 +22,6 @@ def generate_log(data):
             file.write(f"{entry}\n")
             
     # STEP 4: Print a confirmation message with the filename
-     return filename
+    return filename
 
     pass
