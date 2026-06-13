@@ -1,25 +1,20 @@
 #import 
 from datetime import datetime
+import os
 
-log_data = ["User logged in", "User updated profile", "Report exported"]
+def generate_log(data):
+    # TODO: Implement log generation logic
 
-#log in
-def __init__ (self, username, password):
-    self.username = username
-    self.password = password
+    # STEP 1: Validate input
+    # Hint: Check if data is a list
 
-def authenticate():
-    username = input("Enter username: ")
-    password = int(input("Enter password: "))
+    # STEP 2: Generate a filename with today's date (e.g., "log_20250408.txt")
+    # Hint: Use datetime.now().strftime("%Y%m%d")
 
-filename = (f"log_{datetime.now().strftime('%Y%m%d')}.txt")
+    # STEP 3: Write the log entries to a file using File I/O
+    # Use a with open() block and write each line from the data list
+    # Example: file.write(f"{entry}\n")
 
-def date(self, date):
-    self.date = date
-    
+    # STEP 4: Print a confirmation message with the filename
 
-with open(filename, "w") as file:
-    for entry in log_data:
-        file.write(f"{entry}\n")
-
-print(f"Log written to {filename}")
+    pass
